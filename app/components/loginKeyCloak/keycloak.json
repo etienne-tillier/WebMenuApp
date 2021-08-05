@@ -1,0 +1,8 @@
+{
+    "realm": "OpinakaMenuApps",
+    "auth-server-url": "http://localhost:8080/auth/",
+    "ssl-required": "external",
+    "resource": "Opinaka",
+    "public-client": true,
+    "confidential-port": 0
+}

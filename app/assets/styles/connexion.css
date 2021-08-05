@@ -1,0 +1,179 @@
+:root {
+  --color1: rgba(122, 212, 129, 0.897);
+  --color2: rgba(243, 243, 245, 0.973);
+  --color3: rgb(0, 0, 0);
+  --color4: rgba(16, 78, 35, 0.897);
+  --font : 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+.loginPage {
+  background: var(--color1);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.loginChoice {
+  background: var(--color2);
+  width: 55%;
+  height: 75%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 0px 2px 5px rgba(115, 142, 105, 0.55);
+
+}
+
+.loginChoice > h2 {
+  user-select: none;
+  color: var(--color3);
+  font: var(--font);
+  font-size: 1.5rem;
+}
+
+
+h2::after{
+  content: "";
+  position: absolute;
+  top: 38.5%;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  height: 1px;
+  width: 33%;
+  background: var(--color3);
+  animation: h1anim 3s ease-in-out forwards;
+  transform-origin: left;
+}
+
+@keyframes h1anim {
+  100% {
+    transform: translateX(-50%) scaleX(1);
+  }
+}
+
+.loginChoice > .divButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+  height: 60%;
+}
+
+.loginChoice > .divButton > .buttonConnexion {
+  margin: 0 !important;
+  padding: 0 !important;
+  background: var(--color1);
+  width: 65%;
+  padding: 10px 0 !important;
+  font: var(--font);
+  box-shadow: 0px 2px 5px rgba(141, 189, 125, 0.35);
+  transition: 0.2s;
+  font-size: 1.2rem;
+}
+
+input{
+  width: 60%;
+  padding: 3px 0;
+  box-shadow: 0px 2px 5px rgba(141, 189, 125, 0.35);
+  font-size: 1.2rem;
+  transition: 0.2s;
+  font: var(--font);
+  transition: 0.2s;
+  outline: none;
+  border-radius: 5px;
+}
+
+
+
+input::placeholder{
+  text-align: center;
+  font: var(--font);
+}
+
+.disabled {
+  background: grey !important;
+  color: black !important;
+}
+
+.disabled:hover{
+  background: grey !important;
+  color: black !important;
+  letter-spacing: normal !important;
+  transform: scale(1) !important;
+}
+
+
+.loginChoice > .divButton > .buttonConnexion:hover {
+  background: var(--color4);
+  color: var(--color2);
+  letter-spacing: 1px;
+  transform: scale(1.10);
+}
+
+input:focus{
+  border: 1px solid var(--color4);
+  transform: scale(1.10);
+}
+
+.imgLogin {
+  width: 20%;
+  place-self: center;
+}
+
+
+@media screen and (min-width: 900px) {
+  .loginChoice > .divButton {
+    height: 50%;
+  }
+
+  h2::after{
+    top: 44.5%;
+  }
+}
+
+@media screen and (min-width: 1220px) {
+  .loginChoice > .divButton {
+    height: 40%;
+  }
+  .loginChoice > h2 {
+    font-size: 2rem;
+  }
+
+  h2::after{
+    top: 52%;
+  }
+
+  .loginChoice {
+    width: 40%;
+  }
+
+  .imgLogin{
+    width: 27%;
+  }
+
+}
+
+@media screen and (min-width: 1700px) {
+  .loginChoice > .divButton > .buttonConnexion {
+    width: 55%;
+    padding: 15px 0 !important;
+  }
+
+  input{
+    width: 50%;
+    padding: 8px 0 !important;
+  }
+
+  .loginChoice > h2 {
+    font-size: 2.5rem;
+  }
+
+}

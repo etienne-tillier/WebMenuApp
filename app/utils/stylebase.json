@@ -1,0 +1,50 @@
+{
+  "indexPage" : {
+    "barreNav" : {
+      "background" : "darkblue"
+    },
+    "body" : {
+      "background" : "red",
+      "background-image" : "https://wallpapercave.com/wp/wp2675445.jpg",
+      "color" : "red",
+      "fontFamily" : "Arial black, Sceherazade"
+    },
+    "items" : {
+      "color" : "black",
+      "hover" : {
+        "backgroundColor" : "red",
+        "color" : "red"
+      }
+    },
+    "title" : {
+      "color" : "white",
+      "name" : "Amazon Application"
+    }
+  },
+  "loginPage" : {
+    "connexion" : {
+      "firebase" : {
+        "name" : "Firebase"
+      },
+      "keycloak" : {
+        "name" : "Keycloak"
+      },
+      "local" : {
+        "name" : "Hors ligne"
+      }
+    },
+    "design" : {
+      "color" : {
+        "bgLoginColor" : "rgba(243, 243, 245, 0.973)",
+        "mainColor" : "rgba(122, 212, 129, 0.897)",
+        "secondColor" : "rgba(16, 78, 35, 0.897)"
+      },
+      "logo" : {
+        "backgroundImage" : "https://studl.com/assets/uploads/logo_entreprises/55895/image5dc258df399ab8.52035053.png"
+      },
+      "title" : {
+        "name" : "Opinaka"
+      }
+    }
+  }
+}

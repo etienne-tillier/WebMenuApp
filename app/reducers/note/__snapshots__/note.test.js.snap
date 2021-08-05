@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ADD_NOTE is correct 1`] = `
+Immutable.Map {
+  "notes": Object {
+    "123": Object {
+      "content": "welcome to Deer 2",
+      "modified": 1550863560361,
+      "rev": "123a",
+      "title": "welcome to Deer 2",
+    },
+  },
+  "selectedNoteID": "",
+  "searchNotes": Array [],
+}
+`;
+
+exports[`DELETE_SELECTED_NOTE is correct 1`] = `
+Immutable.Map {
+  "notes": Object {},
+  "selectedNoteID": "",
+  "searchNotes": Array [],
+}
+`;
+
+exports[`EDIT_SELECTED_NOTE is correct 1`] = `
+Immutable.Map {
+  "notes": Object {},
+  "selectedNoteID": "",
+  "searchNotes": Array [],
+}
+`;
+
+exports[`INITIAL_STATE is correct 1`] = `
+Immutable.Map {
+  "notes": Object {},
+  "selectedNoteID": "",
+  "searchNotes": Array [],
+}
+`;
+
+exports[`NOTES_FETCH_SUCCESS is correct 1`] = `
+Immutable.Map {
+  "notes": Object {
+    "123": Object {
+      "content": "welcome to Deer",
+      "modified": 1550863560352,
+      "rev": "123a",
+      "title": "welcome to Deer",
+    },
+  },
+  "selectedNoteID": "",
+  "searchNotes": Array [],
+}
+`;
+
+exports[`NOTES_SEARCH_UPDATE is correct 1`] = `
+Immutable.Map {
+  "notes": Object {},
+  "selectedNoteID": "",
+  "searchNotes": Array [
+    "123",
+  ],
+}
+`;
+
+exports[`SET_SELECTED_NOTE_ID is correct 1`] = `
+Immutable.Map {
+  "notes": Object {},
+  "selectedNoteID": "",
+  "searchNotes": Array [],
+}
+`;
+
+exports[`UPDATE_SELECTED_NOTE_REV is correct 1`] = `
+Immutable.Map {
+  "notes": Object {},
+  "selectedNoteID": "",
+  "searchNotes": Array [],
+}
+`;

@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.11f9b424.chunk.css",
+    "main.js": "/static/js/main.fa4f8c24.chunk.js",
+    "main.js.map": "/static/js/main.fa4f8c24.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.da22d311.js",
+    "runtime-main.js.map": "/static/js/runtime-main.da22d311.js.map",
+    "static/js/2.12bb3069.chunk.js": "/static/js/2.12bb3069.chunk.js",
+    "static/js/2.12bb3069.chunk.js.map": "/static/js/2.12bb3069.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.11f9b424.chunk.css.map": "/static/css/main.11f9b424.chunk.css.map",
+    "static/js/2.12bb3069.chunk.js.LICENSE.txt": "/static/js/2.12bb3069.chunk.js.LICENSE.txt",
+    "static/media/404.125e4e0d.jpg": "/static/media/404.125e4e0d.jpg",
+    "static/media/clock.248d74f0.svg": "/static/media/clock.248d74f0.svg",
+    "static/media/doctor-patient.62e82526.svg": "/static/media/doctor-patient.62e82526.svg",
+    "static/media/doctor.4dfe6180.svg": "/static/media/doctor.4dfe6180.svg",
+    "static/media/loading.f2805faa.gif": "/static/media/loading.f2805faa.gif",
+    "static/media/phone-call.33bf7503.svg": "/static/media/phone-call.33bf7503.svg",
+    "static/media/placeholder.0c0840fc.svg": "/static/media/placeholder.0c0840fc.svg",
+    "static/media/pnf.18ff67d5.jpg": "/static/media/pnf.18ff67d5.jpg",
+    "static/media/treatment.be2697da.svg": "/static/media/treatment.be2697da.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.da22d311.js",
+    "static/js/2.12bb3069.chunk.js",
+    "static/css/main.11f9b424.chunk.css",
+    "static/js/main.fa4f8c24.chunk.js"
+  ]
+}
