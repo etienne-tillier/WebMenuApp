@@ -1,0 +1,132 @@
+{
+  "name": "Opinaka",
+  "productName": "Opinaka-Apps",
+  "version": "1.0.0",
+  "description": "A modern, fast, beautiful menu for app",
+  "author": "Tillier Etienne <etienne1.tillier@gmail.com>",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abahmed/Deer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/abahmed/Deer/issues"
+  },
+  "compression": "store",
+  "electronVersion": "4.1.4",
+  "license": "MIT",
+  "copyright": "© 2019, Deer",
+  "private": true,
+  "scripts": {
+    "electron-rebuild": "./node_modules/.bin/electron-rebuild -f -w sqlite3",
+    "postinstall": "install-app-deps",
+    "build-prod": "webpack --mode=production",
+    "deploy": "node deploy.js",
+    "docs": "node genDocs.js",
+    "lint": "standard app/**/*.js app/**/*.jsx --fix",
+    "release": "npm run build-prod && electron-builder --publish never",
+    "release:linux": "npm run build-prod && electron-builder --linux ",
+    "release:linux:deb": "npm run build-prod && electron-builder --linux deb",
+    "release:linux:rpm": "npm run build-prod && electron-builder --linux rpm",
+    "release:linux:zip": "npm run build-prod && electron-builder --linux zip",
+    "release:mac": "npm run build-prod && electron-builder --mac --publish never",
+    "release:win": "npm run build-prod && electron-builder --win --publish never",
+    "start": "webpack-dev-server --mode=development",
+    "test": "jest --verbose",
+    "prettify": "prettier --write app/**/*.js app/**/*.jsx"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/parser": "^7.6.0",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "@octokit/rest": "^16.29.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "devtron": "^1.4.0",
+    "electron": "^6.0.10",
+    "electron-builder": "^21.2.0",
+    "electron-devtools-installer": "^2.2.4",
+    "electron-reload": "^1.5.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "file-loader": "^4.2.0",
+    "glob-fs": "^0.1.7",
+    "husky": "^3.0.5",
+    "jest": "^24.9.0",
+    "jquery": "^3.4.1",
+    "jsdoc-to-markdown": "^5.0.1",
+    "mime": "^2.4.4",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1",
+    "redux-mock-store": "^1.5.3",
+    "standard": "^14.3.1",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "@material-ui/core": "^3.9.3",
+    "@material-ui/icons": "^4.4.1",
+    "electron-is-dev": "^1.1.0",
+    "electron-log": "^3.0.8",
+    "electron-store": "^5.0.0",
+    "electron-window-state": "^5.0.3",
+    "firebase": "^8.4.3",
+    "i18next": "^17.0.16",
+    "immutable": "^4.0.0-rc.12",
+    "is-online": "^9.0.0",
+    "jss": "^9.8.7",
+    "jss-rtl": "^0.2.3",
+    "keycloak-js": "^13.0.0",
+    "moment": "^2.24.0",
+    "pouchdb-browser": "^7.1.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-custom-scrollbars": "^4.2.1",
+    "react-dom": "^16.9.0",
+    "react-electron-web-view": "^2.0.1",
+    "react-firebaseui": "^5.0.2",
+    "react-flip-move": "^3.0.3",
+    "react-i18next": "^10.12.5",
+    "react-jss": "^8.6.1",
+    "react-quill": "^1.3.3",
+    "react-redux": "^7.1.1",
+    "react-router-dom": "^5.0.1",
+    "redux": "^4.0.4",
+    "redux-actions": "^2.6.5",
+    "redux-thunk": "^2.3.0",
+    "sqlite3": "^5.0.2",
+    "uuid": "^3.3.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettify && npm run lint && npm run docs && git add -u"
+    }
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": [
+      "coverage"
+    ],
+    "env": [
+      "jest"
+    ]
+  },
+  "debug": {
+    "vscode": true,
+    "chromeDevTools": true,
+    "chromeDebugPort": 9222
+  }
+}
